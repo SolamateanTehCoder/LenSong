@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Len Song | Flavoured Hydration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc;
+        }
+        h1, h2, h3, .brand-font {
+            font-family: 'Lexend', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .flavor-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .logo-placeholder {
+            width: 40px;
+            height: 40px;
+            background: #e2e8f0;
+            border: 2px dashed #94a3b8;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #64748b;
+        }
+        .visionary-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .visionary-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <nav class="fixed w-full z-50 glass-card py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="logo-placeholder">
+                    <img src="logo.png" alt="">
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
+                <a href="#pitch" class="hover:text-blue-600 transition">Pitch</a>
+                <a href="#flavors" class="hover:text-blue-600 transition">Flavors</a>
+                <a href="#finance" class="hover:text-blue-600 transition">Finance</a>
+                <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+            </div>
+            <div class="w-10"></div> 
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 px-6 text-center bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mt-6 mb-8 leading-tight">Water is boring. <br><span class="gradient-text">Add flavor now.</span></h1>
+            <p class="text-xl text-slate-600 mb-10 leading-relaxed">
+                Glocalising "Air Up" for the Vietnamese Gen Z market. Combining global innovation with authentic local heritage through retronasal technology.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <div class="flex items-center justify-center space-x-2 text-slate-500 italic">
+                    <span>"Lên Sóng" — To Go Live</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="pitch" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Meet the Visionaries</h2>
+                <div class="h-1.5 w-24 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+                <div class="visionary-card p-8 border border-slate-100 rounded-[2.5rem] bg-slate-50 text-center">
+                    <div class="w-20 h-20 bg-emerald-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto shadow-lg shadow-emerald-200">AM</div>
+                    <h3 class="text-xl font-bold mb-1">Arjun</h3>
+                    <p class="text-xs text-emerald-600 font-bold mb-4 uppercase tracking-widest">Financial Director</p>
+                    <p class="text-sm text-slate-600 italic">"Targeting a 284% gross profit margin with local manufacturing efficiency."</p>
+                </div>
+
+                <div class="visionary-card p-8 border border-slate-100 rounded-[2.5rem] bg-slate-50 text-center">
+                    <div class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto shadow-lg shadow-orange-200">V</div>
+                    <h3 class="text-xl font-bold mb-1">Vihan</h3>
+                    <p class="text-xs text-orange-500 font-bold mb-4 uppercase tracking-widest">Marketing Lead</p>
+                    <p class="text-sm text-slate-600 italic">"Harnessing cultural trends and social media to appeal to trend followers."</p>
+                </div>
+
+                <div class="visionary-card p-8 border border-slate-100 rounded-[2.5rem] bg-slate-50 text-center">
+                    <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto shadow-lg shadow-purple-200">J</div>
+                    <h3 class="text-xl font-bold mb-1">Jay</h3>
+                    <p class="text-xs text-purple-600 font-bold mb-4 uppercase tracking-widest">Product Designer</p>
+                    <p class="text-sm text-slate-600 italic">"Flavours derived from exclusive Vietnamese fruits to differentiate from global competitors."</p>
+                </div>
+
+                <div class="visionary-card p-8 border border-slate-100 rounded-[2.5rem] bg-slate-50 text-center">
+                    <div class="w-20 h-20 bg-pink-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto shadow-lg shadow-pink-200">L</div>
+                    <h3 class="text-xl font-bold mb-1">Lina</h3>
+                    <p class="text-xs text-pink-600 font-bold mb-4 uppercase tracking-widest">Operations</p>
+                    <p class="text-sm text-slate-600 italic">"Locally sourced scents and accessories providing jobs across Vietnamese communities."</p>
+                </div>
+
+                <div class="visionary-card p-8 border border-slate-100 rounded-[2.5rem] bg-slate-50 text-center">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto shadow-lg shadow-blue-200">A</div>
+                    <h3 class="text-xl font-bold mb-1">Arifa</h3>
+                    <p class="text-xs text-blue-600 font-bold mb-4 uppercase tracking-widest">Logistics & Strategy</p>
+                    <p class="text-sm text-slate-600 italic">"Focusing on recyclable, locally sourced materials to balance cost and footprint."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flavors" class="py-20 bg-slate-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">The Flavor Lineup</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Using retronasal smell technology to provide 100% pure water with the authentic taste of Vietnam's finest fruits.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flavor-card group">
+                    <div class="aspect-square bg-slate-800 rounded-3xl mb-6 flex items-center justify-center border border-slate-700 overflow-hidden relative">
+                        <img src="star.png" alt="" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Star Apple (Vú Sữa)</h4>
+                    <p class="text-slate-400 text-sm">A mellow, "creamy" sensation that feels like a chilled milky dessert.</p>
+                </div>
+                <div class="flavor-card group">
+                    <div class="aspect-square bg-slate-800 rounded-3xl mb-6 flex items-center justify-center border border-slate-700 overflow-hidden relative">
+                        <img src="egg.png" alt="" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Egg Fruit</h4>
+                    <p class="text-slate-400 text-sm">Unique texture and taste that provides local pride and nostalgia.</p>
+                </div>
+                <div class="flavor-card group">
+                    <div class="aspect-square bg-slate-800 rounded-3xl mb-6 flex items-center justify-center border border-slate-700 overflow-hidden relative">
+                        <img src="nipa.png" alt="" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Nipa Palm Fruit</h4>
+                    <p class="text-slate-400 text-sm">The "exclusively Vietnamese" choice for those who want authentic flavor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="finance" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 italic uppercase tracking-tighter">Finance, Design & Web Dev</h2>
+                    <div class="space-y-8">
+                        <div class="flex justify-between items-end border-b pb-4">
+                            <div>
+                                <p class="text-slate-500 text-sm">Manufacturing Cost</p>
+                                <p class="text-2xl font-bold">£5.00 <span class="text-sm font-normal text-slate-400">/ unit</span></p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-slate-500 text-sm">Retail Price (Vietnam)</p>
+                                <p class="text-2xl font-bold text-blue-600">500k VND <span class="text-sm font-normal text-slate-400">(£14.22)</span></p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-6 bg-blue-50 rounded-2xl">
+                                <p class="text-blue-600 font-bold text-3xl">284%</p>
+                                <p class="text-sm text-blue-800">Gross Profit Margin</p>
+                            </div>
+                            <div class="p-6 bg-emerald-50 rounded-2xl">
+                                <p class="text-emerald-600 font-bold text-3xl">23.8%</p>
+                                <p class="text-sm text-emerald-800">Net Profit / Qtr</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-500">Manufacturing Target: 300,000 units/month</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 italic uppercase tracking-tighter">Material & Sustainability</h2>
+                    <div class="space-y-6">
+                        <div class="p-6 border rounded-2xl">
+                            <h4 class="font-bold mb-2">PETE Plastic (Bottle & Shell)</h4>
+                            <p class="text-slate-600 text-sm">Polyethylene Terephthalate: The most widely recycled plastic. Sourced locally in Vietnam to minimize carbon footprint.</p>
+                        </div>
+                        <div class="p-6 border rounded-2xl">
+                            <h4 class="font-bold mb-2">EPDM Rubber (Straw & Straps)</h4>
+                            <p class="text-slate-600 text-sm">Ethylene Propylene Diene Monomer: High-durability synthetic rubber for longevity and tactile premium feel.</p>
+                        </div>
+                        <div class="bg-yellow-50 p-4 rounded-xl border border-yellow-200">
+                            <p class="text-xs text-yellow-800"><strong>Note to Investors:</strong> Straps are included as a key "upsell" and subscription accessory to maximize Customer Lifetime Value (CLV).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Investor Q&A</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <p class="font-bold text-blue-600 mb-2">Why choose "Len Song" as the name?</p>
+                    <p class="text-slate-600 text-sm">"Lên sóng" in Vietnamese literally means "to go on air" or "to go live." It’s a nod to the original "Air Up" brand while using a local idiom that resonates with our Gen Z target audience.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <p class="font-bold text-blue-600 mb-2">Why focus on "Vietnamese Soap Opera" style ads?</p>
+                    <p class="text-slate-600 text-sm">These melodrama style ads are a massive trend—highly shareable, humorous, and culturally specific. It makes our brand feel like a "local friend" rather than a foreign invader.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <p class="font-bold text-blue-600 mb-2">Is 500,000 Dong affordable?</p>
+                    <p class="text-slate-600 text-sm">Yes. High-end reusable bottles in Vietnam often sit in the 400k–700k range. As a fashionable lifestyle brand, this price point reflects its status.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <p class="font-bold text-blue-600 mb-2">Where does the profit gap go (284% to 23.8%)?</p>
+                    <p class="text-slate-600 text-sm">The 284% is Gross Profit. The 23.8% Net Profit accounts for marketing spend on live channels, shipping for the online-only model, and local team wages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-2xl font-bold mb-4">LEN SONG</div>
+            <p class="text-slate-500 text-sm mb-8">Bridging global innovation and authentic local flavor.</p>
+            <div class="flex justify-center flex-wrap gap-4">
+                <span class="text-xs text-slate-600">Arjun</span>
+                <span class="text-xs text-slate-600">Vihan</span>
+                <span class="text-xs text-slate-600">Jay</span>
+                <span class="text-xs text-slate-600">Lina</span>
+                <span class="text-xs text-slate-600">Arifa</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
